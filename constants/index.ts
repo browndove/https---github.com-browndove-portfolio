@@ -369,17 +369,17 @@ export const contactDetails = [
   {
     id: 1,
     icon: Phone,
-    text: "+92 333 1234567",
+    text: "+233 596471659",
   },
   {
     id: 2,
     icon: Mail,
-    text: "waseemaofficial@gmail.com",
+    text: "bluebird23szn@gmail.com",
   },
   {
     id: 3,
     icon: MapPin,
-    text: "Lahore, Pakistan",
+    text: "Accra, Ghana",
   },
 ];
 export const timeline = [

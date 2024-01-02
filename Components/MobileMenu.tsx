@@ -3,11 +3,11 @@ import { Menu, Phone, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
-import { navLinks } from "@/constants";
+import { navLinks, socialLinks } from "@/constants";
 
 const MobileMenu = () => {
 
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(false)
 
     const toggleMenu = () => {
         setIsOpen(!isOpen)
@@ -42,13 +42,15 @@ const MobileMenu = () => {
 
 
         <nav className='flex flex-col justify-center flex-1 items-center gap-10 '>
-        <ul className='flex items-center gap-8'>
+        <ul className='flex items-center flex-col gap-5'>
             
          { 
           navLinks.map((link,index) => 
 (
     <li key={index}>
-        <NavLink href={link.url} label={link.label}/>
+        <NavLink href={link.url} label={link.label}
+        className=""
+        />
     </li>
 )
           )
@@ -60,6 +62,14 @@ const MobileMenu = () => {
             Contact me
         </Link>
       </nav>
+
+      <div className="w-full h-20 flex items-center justify-between max-width border-t border-peach">
+                {
+                    socialLinks.map((link,index) => (
+                        <a href={link.url} className="text-gray-700 hover:text-purple transition-colors">{link.label}</a>
+                    ))
+                }
+      </div>
 
       </div>
     </div>
