@@ -48,7 +48,7 @@ const Footer = () => {
          </div>
 
  {/* copy right text goes here */}
-<p className='mt-5'>Copyright @ { new Date().getFullYear() }Christian Ampeh. All right reserved</p>
+<p className='mt-8 text-gray-600 text-center text-sm'>Copyright @ { new Date().getFullYear() } Christian Ampeh. All right reserved</p>
 
     </footer>
   )
