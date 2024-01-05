@@ -1,3 +1,4 @@
+import FaqsSection from '@/Components/FaqsSection'
 import PortfolioItem from '@/Components/PortfolioItem'
 import SectionHead from '@/Components/SectionHead'
 import TestimonalSection from '@/Components/TestimonalSection'
@@ -31,11 +32,54 @@ const page = () => {
             View portfolio 
             <ArrowBigRight size={16} />
           </Link>
-        </div>
+</div>
+
+{/* stats */}
+
+<div className='bg-peach-400 w-full py-8 px-10 rounded-l-lg mt-16 flex-wrap gap-12 hidden tablet:flex'>
+    <div className=''>
+<h3 className='text-gray-700'>55 <span className='text-purple'>+</span></h3>
+<p className='text-gray-600'>Projects Completed</p>
+    </div>
+
+    <div className=''>
+<h3 className='text-gray-700'>30 <span className='text-purple'>+</span></h3>
+<p className='text-gray-600'>Happy Customers</p>
+    </div>
+
+    <div className=''>
+<h3 className='text-gray-700'>5 <span className='text-purple'>+</span></h3>
+<p className='text-gray-600'>Years of experience</p>
+    </div>
+
+
+</div>
+
+
+<div className=' mt-16 grid grid-cols-2 gap-3 tablet:hidden'>
+    <div className='py-8 px-10 rounded-lg bg-peach-400 text-center col-span-2'>
+<h3 className='text-gray-700'>55 <span className='text-purple'>+</span></h3>
+<p className='text-gray-600'>Projects Completed</p>
+    </div>
+
+    <div className='py-8 px-10 rounded-lg bg-peach-400 text-center col-span-2'>
+<h3 className='text-gray-700'>30 <span className='text-purple'>+</span></h3>
+<p className='text-gray-600'>Happy Customers</p>
+    </div>
+
+    <div className='py-8 px-10 rounded-lg bg-peach-400 text-center col-span-2'>
+<h3 className='text-gray-700'>5 <span className='text-purple'>+</span></h3>
+<p className='text-gray-600'>Years of experience</p>
+    </div>
+
+
+</div>
+
+
       </div>
       {/* rightside */}
       <div className='relative w-full tablet:w-1/3 h-[400px] tablet:h-[700px] rounded-b-2xl overflow-hidden mt-5'>
-        <Image src={"/images/hero.png"} alt='hero' fill className='object-cover ' />
+        <Image src={"/images/teen.jpg"} alt='hero' fill className='object-cover ' />
       </div>
     </section>
 
@@ -119,9 +163,12 @@ gap-3 tablet:gap-6'>
   </section>
 
   {/* testimonals */}
-  <section>
+
     <TestimonalSection />
-  </section>
+  
+  {/* FAQs */}
+<FaqsSection />
+
     </>
   )
 }
