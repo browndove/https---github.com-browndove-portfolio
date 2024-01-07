@@ -386,28 +386,28 @@ export const timeline = [
   {
     id: 1,
     title: "Senior Web Developer",
-    duration: "2018 - Present",
+    duration: "2023 - Present",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     id: 2,
     title: "Web Developer",
-    duration: "2015 - 2018",
+    duration: "2021 - Present",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     id: 3,
     title: "Junior Web Developer",
-    duration: "2013 - 2015",
+    duration: "2021 - 2022",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
   {
     id: 4,
     title: "Degree in Computer Science",
-    duration: "2010 - 2013",
+    duration: "2022 - Present",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
