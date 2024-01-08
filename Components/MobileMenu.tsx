@@ -66,7 +66,7 @@ const MobileMenu = () => {
       <div className="w-full h-20 flex items-center justify-between max-width border-t border-peach">
                 {
                     socialLinks.map((link,index) => (
-                        <a href={link.url} className="text-gray-700 hover:text-purple transition-colors">{link.label}</a>
+                        <a href={link.url} key={index} className="text-gray-700 hover:text-purple transition-colors">{link.label}</a>
                     ))
                 }
       </div>
