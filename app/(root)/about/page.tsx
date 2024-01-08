@@ -76,16 +76,14 @@ w-full py-8 px-10 mt-14 tablet:mt-24 gap-12 flex flex-col tablet:flex-row
             {
               timeline.map((item, index) =>(
                 <div key={index} className='relative flex items-center justify-between tablet:justify-normal
-                tablet:odd:flex-row-reverse group: '>
+                tablet:odd:flex-row-reverse group '>
                     <div className='flex items-center justify-center w-10 h-10 rounded-full bg-peach-400 shrink-0 tablet:order-1
                     tablet:group-odd:translate-x-1/2 tablet:group-even:translate-x-1/2  group-first:before:absolute group-first:before:w-1
                     group-first:before:h-20 group-first:before:bottom-full group-first:before:bg-peach-600
                     group-last:before:absolute  group-last:before:w-1
-                    group-last:before:h-20 group-last:before:bottom-full group-last:before:bg-peach-600
-                    '>
-                        <span className='w-3 h-3 rounded-full'>
-
-                        </span>
+                    group-last:before:h-20 group-last:before:bottom-full group-last:before:top-full group-last:before:bg-peach-600 
+                   group-first:before:-ml-[79px]  '>
+                        <span className='w-3 h-3 bg-purple  rounded-full'></span>
                     </div>
 
 
