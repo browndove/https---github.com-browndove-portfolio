@@ -7,11 +7,15 @@ import { navLinks, socialLinks } from "@/constants";
 
 const MobileMenu = () => {
 
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
 
     const toggleMenu = () => {
         setIsOpen(!isOpen)
     }
+
+    const closeMenu = () => {
+      setIsOpen(false); // Set menu state to null when closing
+    };
 
 
   return (
@@ -36,7 +40,7 @@ const MobileMenu = () => {
           <button className="text-gray-700 hover:text-purple transition-colors"
           onClick={toggleMenu}
           >
-            <X />
+            <X onClick={closeMenu}/>
           </button>
         </div>
 

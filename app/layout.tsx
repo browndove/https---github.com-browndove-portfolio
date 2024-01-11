@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-peach-500 ${manrope.className}`}>{children}</body>
+      <body className={`bg-peach-700 ${manrope.className}`}>{children}</body>
     </html>
   )
 }

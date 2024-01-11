@@ -31,7 +31,7 @@ const Header = () => {
         </Link>
       </nav>
 
-      {/* <MobileMenu /> */}
+      <MobileMenu />
     </header>
   )
 }
